@@ -88,3 +88,42 @@ The biological stress experiment should not attempt to prove that epistasis, rou
 - Weissman DB et al. 2009. The pace of evolution across fitness valleys.
 - Desai MM, Fisher DS. 2007/related successional-fixation and concurrent-mutation literature.
 - Gerrish/Lenski and subsequent clonal-interference literature.
+
+
+## Adversarial search update: direct Wright–Fisher/origin–fixation comparisons
+
+A close precedent must be treated explicitly:
+
+Baxter et al. (2021), *How individuals change language*, PLOS ONE 16:e0252582, uses an individual-level Wright–Fisher-type process and a population-level origin–fixation description. The paper derives origin/fixation quantities from the underlying process, compares the two descriptions numerically, includes sequential two-change cases, and analyzes interference when a later innovation arises before an earlier one has fixed.
+
+This is important prior art.
+
+### Consequence for novelty
+
+**Claim now prohibited:** “This is the first comparison of origin–fixation and Wright–Fisher models,” “the first finite-time comparison,” or “the first study of interference between sequential changes.”
+
+The candidate distinction is narrower:
+1. probability error itself is the response variable across a predeclared evolutionary parameter grid;
+2. error is signed, so approximation under- and over-estimation are separated;
+3. adequacy is explicitly tolerance-relative through A_tau;
+4. the location of partial A_tau is treated as an estimand;
+5. biological assumption violations are evaluated by how they displace that boundary;
+6. paired violations are decomposed with interaction contrasts;
+7. recovery and failure regimes are both required;
+8. empirical data are used as assumption-stress evidence rather than as proof of the theoretical framework.
+
+### Additional neighboring evidence
+
+Weissman et al. (2009), *The pace of evolution across fitness valleys*, explicitly compares mutation waiting and conditional fixation times and gives a periodic-selection/SSWM condition. This reinforces that time-scale separation itself is established.
+
+Origin–fixation simulation work also treats resident-genotype transitions as approximations to Wright–Fisher evolution and studies accuracy/algorithmic consequences. Therefore our manuscript must cite this family and avoid generic “approximation” priority claims.
+
+### Updated novelty test
+
+Before submission, the central claim survives only if the literature search still fails to identify prior work that jointly:
+- defines a finite-horizon target probability under both models,
+- makes signed probability discrepancy the central mapped quantity,
+- defines tolerance-dependent adequacy regions/boundaries,
+- and quantifies boundary displacement/interactions under controlled assumption violations.
+
+Finding any paper satisfying these conditions requires another narrowing of the claim.
