@@ -1,0 +1,27 @@
+name: timescale-holdout
+on:
+  push:
+    paths:
+      - ".github/workflows/timescale-holdout.yml"
+      - "scripts/run_timescale_holdout.py"
+      - "src/eab/**"
+  workflow_dispatch:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e ".[test]"
+      - run: pytest
+      - run: python scripts/run_timescale_holdout.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: timescale-holdout-results
+          path: |
+            results/timescale_holdout.csv
+            results/timescale_holdout_summary.csv
+          if-no-files-found: error
