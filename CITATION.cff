@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software or its frozen computational artifacts, please cite this repository."
+title: "Evolutionary Accessibility Benchmark"
+type: software
+authors:
+  - family-names: "Akhtar"
+    given-names: "Mohammad Amir Khusru"
+version: "0.1.0"
+date-released: "2026-09-28"
+repository-code: "https://github.com/Arithmetic-Power-Geometry/Evolutionary-Accessibility-Benchmark"
+url: "https://github.com/Arithmetic-Power-Geometry/Evolutionary-Accessibility-Benchmark"
+abstract: "Matched origin-fixation and finite-population benchmark for finite-horizon evolutionary target-probability approximation adequacy."
+keywords:
+  - origin-fixation
+  - Wright-Fisher
+  - approximation adequacy
+  - fixation probability
+  - experimental evolution
