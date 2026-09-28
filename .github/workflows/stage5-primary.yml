@@ -1,0 +1,21 @@
+name: stage5-primary
+on:
+  workflow_dispatch:
+jobs:
+  stage5:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e ".[test]"
+      - run: pytest -q
+      - run: python scripts/run_stage5.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: stage5-primary-results
+          path: |
+            results/stage5_primary.csv
+            results/stage5_outcomes/
