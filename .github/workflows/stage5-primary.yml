@@ -3,9 +3,13 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - ".github/stage5-trigger"
+      - ".github/stage5-trigger-*"
 jobs:
   stage5:
+    strategy:
+      fail-fast: false
+      matrix:
+        baseline: [B1, B2, B3, B4]
     runs-on: ubuntu-latest
     timeout-minutes: 180
     steps:
@@ -15,10 +19,10 @@ jobs:
           python-version: "3.12"
       - run: pip install -e ".[test]"
       - run: pytest -q
-      - run: python scripts/run_stage5.py
+      - run: python scripts/run_stage5.py --baseline ${{ matrix.baseline }}
       - uses: actions/upload-artifact@v4
         with:
-          name: stage5-primary-results
+          name: stage5-primary-${{ matrix.baseline }}
           path: |
-            results/stage5_primary.csv
+            results/stage5_primary_${{ matrix.baseline }}.csv
             results/stage5_outcomes/
