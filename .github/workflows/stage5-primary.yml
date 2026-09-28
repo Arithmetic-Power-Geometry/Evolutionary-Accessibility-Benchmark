@@ -1,6 +1,9 @@
 name: stage5-primary
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - ".github/stage5-trigger"
 jobs:
   stage5:
     runs-on: ubuntu-latest
