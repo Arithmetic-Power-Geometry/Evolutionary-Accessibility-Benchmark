@@ -1,0 +1,34 @@
+name: stage5-smoke
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "src/eab/stress.py"
+      - "tests/test_stress.py"
+      - ".github/workflows/stage5-smoke.yml"
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e ".[test]"
+      - run: pytest -q
+      - name: Tiny Stage 5 smoke
+        run: |
+          python - <<'PY'
+          from eab.stress import origin_fixation_target_probability, wright_fisher_target_probability
+          cases=[
+            ("baseline",(3,),0.0,1.0),
+            ("routes",(1,2),0.0,1.0),
+            ("epi_plus",(3,),0.02,1.0),
+            ("mut_hi",(3,),0.0,5.0),
+          ]
+          for i,(name,t,eta,h) in enumerate(cases):
+              p0=origin_fixation_target_probability(40,2e-4,.01,200,t,eta,h)
+              p1,hits=wright_fisher_target_probability(40,2e-4,.01,200,40,700+i,t,eta,h)
+              assert 0 <= p0 <= 1 and 0 <= p1 <= 1
+              print(name,p0,p1,hits)
+          PY
