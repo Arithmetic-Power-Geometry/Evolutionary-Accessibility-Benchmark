@@ -1,18 +1,32 @@
 cff-version: 1.2.0
-message: "If you use this software or its frozen computational artifacts, please cite this repository."
-title: "Evolutionary Accessibility Benchmark"
+message: "If you use this work, please cite the research article below."
+title: "When Does Origin–Fixation Approximate Finite-Population Evolution?: A Finite-Horizon Target-Probability Benchmark with Exact Diagnostics, Stress Tests, and Long-Term Evolution Evidence"
 type: software
 authors:
   - family-names: "Akhtar"
     given-names: "Mohammad Amir Khusru"
-version: "0.1.0"
+    orcid: "https://orcid.org/0000-0002-3432-4199"
+version: "V1"
 date-released: "2026-09-28"
+doi: "10.5281/zenodo.23019878"
+url: "https://doi.org/10.5281/zenodo.23019878"
 repository-code: "https://github.com/Arithmetic-Power-Geometry/Evolutionary-Accessibility-Benchmark"
-url: "https://github.com/Arithmetic-Power-Geometry/Evolutionary-Accessibility-Benchmark"
-abstract: "Matched origin-fixation and finite-population benchmark for finite-horizon evolutionary target-probability approximation adequacy."
+license: "Apache-2.0"
+abstract: "Software and frozen computational artifacts supporting a matched finite-horizon comparison of a sequential origin-fixation approximation with an explicit haploid Wright-Fisher finite-population reference."
 keywords:
   - origin-fixation
-  - Wright-Fisher
+  - Wright-Fisher model
   - approximation adequacy
   - fixation probability
+  - first-passage probability
   - experimental evolution
+preferred-citation:
+  type: article
+  title: "When Does Origin–Fixation Approximate Finite-Population Evolution?: A Finite-Horizon Target-Probability Benchmark with Exact Diagnostics, Stress Tests, and Long-Term Evolution Evidence"
+  authors:
+    - family-names: "Akhtar"
+      given-names: "Mohammad Amir Khusru"
+      orcid: "https://orcid.org/0000-0002-3432-4199"
+  year: 2026
+  doi: "10.5281/zenodo.23019878"
+  url: "https://doi.org/10.5281/zenodo.23019878"
