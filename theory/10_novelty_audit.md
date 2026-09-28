@@ -127,3 +127,50 @@ Before submission, the central claim survives only if the literature search stil
 - and quantifies boundary displacement/interactions under controlled assumption violations.
 
 Finding any paper satisfying these conditions requires another narrowing of the claim.
+
+
+## Adversarial search update: error surfaces and validity regions
+
+A second novelty threat is now explicit. Wright–Fisher approximation studies already quantify approximation quality across parameter space using distance/error surfaces. Examples include Tataru et al.'s comparisons of approximate versus true allele-frequency distributions with Hellinger-distance heatmaps and Paris et al.'s comparison of parametric Wright–Fisher transition approximations with Wasserstein-distance heatmaps across starting frequency, time interval, and selection intensity.
+
+Other population-genetic theory also derives ranges/conditions of validity for approximations and identifies regime/interference boundaries.
+
+### Consequence
+
+**Claims now prohibited:**
+- first to quantify approximation error in population genetics;
+- first to map approximation accuracy over parameter space;
+- first to use an error/distance heatmap against Wright–Fisher dynamics;
+- first to identify a parameter-space validity/range-of-validity region;
+- first to identify a boundary separating evolutionary regimes.
+
+### Candidate distinction after this search
+
+The remaining candidate contribution must be stated at the level of the specific estimand and experiment:
+
+1. finite-horizon **target-event probability** is matched between a reduced evolutionary process and an explicit finite-population reference;
+2. the discrepancy is **signed**, preserving under- versus over-estimation rather than only distributional distance;
+3. a scientifically declared tolerance converts that event-probability discrepancy into an **adequacy set for the particular approximation and endpoint**;
+4. the study estimates how that adequacy set/boundary changes when biological assumptions are perturbed;
+5. perturbations are compared in a common design and paired perturbations receive explicit interaction contrasts;
+6. recovery, agreement, under-estimation and over-estimation are all admissible outcomes;
+7. the boundary is not presented as a universal biological regime boundary.
+
+This is narrower than the previous novelty statement and is safer.
+
+### Terminology discipline
+
+Prefer:
+- “approximation-adequacy set/boundary for the specified endpoint and tolerance”
+- “signed target-probability discrepancy”
+- “boundary displacement under assumption perturbation”
+
+Avoid:
+- “new validity boundary”
+- “first error landscape”
+- “new evolutionary regime”
+- “universal adequacy boundary”
+
+### Falsification of novelty
+
+If prior work is found that jointly treats a matched finite-horizon evolutionary target-event probability, signed approximation discrepancy, an explicit tolerance-defined adequacy set, and controlled displacement/interactions of that set under biological assumption violations, the current methodological novelty claim must be narrowed again.
