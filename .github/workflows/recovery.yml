@@ -1,0 +1,29 @@
+name: recovery-benchmark
+
+on:
+  push:
+    paths:
+      - ".github/workflows/recovery.yml"
+      - "src/**"
+      - "scripts/run_recovery.py"
+      - "configs/recovery.csv"
+  workflow_dispatch:
+
+jobs:
+  recovery:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install --upgrade pip
+      - run: pip install -e ".[test]"
+      - run: pytest
+      - run: python scripts/run_recovery.py --config configs/recovery.csv --output results/recovery.csv
+      - uses: actions/upload-artifact@v4
+        with:
+          name: recovery-results
+          path: results/recovery.csv
+          if-no-files-found: error
