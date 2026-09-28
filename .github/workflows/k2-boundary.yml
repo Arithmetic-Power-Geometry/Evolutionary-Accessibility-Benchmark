@@ -1,0 +1,25 @@
+name: k2-boundary
+on:
+  push:
+    paths:
+      - ".github/workflows/k2-boundary.yml"
+      - "scripts/run_k2_boundary.py"
+      - "src/eab/**"
+  workflow_dispatch:
+jobs:
+  boundary:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e ".[test]"
+      - run: pytest
+      - run: python scripts/run_k2_boundary.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: k2-boundary-results
+          path: results/k2_boundary.csv
+          if-no-files-found: error
