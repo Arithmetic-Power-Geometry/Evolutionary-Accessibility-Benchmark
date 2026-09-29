@@ -23,3 +23,8 @@ The primary Stage-5 conclusion is intentionally negative with respect to the fro
 ## Empirical evidence
 
 The LTEE files summarize analyses of public Dryad datasets **10.5061/dryad.6226d** and **10.5061/dryad.8q6n4**. These observations establish biological occurrence of mutation-state heterogeneity, mutation-spectrum differences, and alternative Cit+ structural route classes. They do not causally validate the simulated approximation-error responses.
+
+
+## Manuscript terminology
+
+Final reporting uses **discrepancy** rather than implying that the Wright–Fisher comparison is biological ground truth. Stage 5 reports the `{10,01}` condition as a **multiple-target perturbation**. The primary factor-two result is unchanged: 36/36 frozen cells remained within `|E_log| <= log10(2)`.
