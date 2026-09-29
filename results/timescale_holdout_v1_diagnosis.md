@@ -22,7 +22,7 @@ Within target-probability strata, phi correlations were 0.9278, 0.9278, and 0.93
 All 18/18 (N,s,q) series showed monotone contraction of |E_log| as T increased.
 
 ## Interpretation
-The independently specified hold-out experiment validates time-scale separation as an organizer of finite-horizon approximation error for this one-locus beneficial-substitution model. The especially strong phi result indicates that the fraction of the observation horizon occupied by a simple sweep-time scale is a useful candidate predictor.
+The held-out exact experiment validates time-scale separation as an organizer of finite-horizon approximation discrepancy for this one-locus beneficial-substitution model. The especially strong phi result indicates that the fraction of the observation horizon occupied by a simple sweep-time scale is a useful candidate predictor.
 
 This does NOT establish phi as a universal evolutionary law. The result is currently limited to the specified model pair, beneficial one-locus dynamics, forward mutation, constant population size, and the tested parameter domain.
 
@@ -32,3 +32,8 @@ The weaker pooled rho correlation relative to its within-q correlations also mat
 Move from K=1 mechanism validation to a small, predeclared K=2 finite-population boundary experiment. Use phi as a candidate covariate, but do not assume it remains sufficient. Vary mutation supply and horizon independently enough to distinguish sweep-time error from multi-step/segregating-lineage effects.
 
 No external dataset is required for the next experiment.
+
+
+## Final manuscript alignment
+
+The final paper describes these as **54 held-out exact cells using previously unseen parameter values**, not as an externally independent dataset. `phi=t_sweep/T` strongly tracks `|E_log|` (Spearman `rho=0.9226`, `p=3.67e-23`), and all 18 matched `(N,s,q)` series contract monotonically as `T` increases. `phi` is a candidate organizer, not a universal law.
