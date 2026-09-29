@@ -44,3 +44,8 @@ If recovery fails, the next action is model/endpoint/time-scale diagnosis, not e
 - probabilities lie in [0,1];
 - Monte Carlo confidence intervals are reported;
 - all seeds and configurations are retained.
+
+
+## Outcome note
+
+The six-cell recovery benchmark did not establish universal recovery. It motivated the exact Stage-2 mechanism test. This file remains a pre-execution protocol record; final numerical interpretation is in `results/recovery_v1_diagnosis.md` and the manuscript.
