@@ -14,7 +14,7 @@ Each of the 36 frozen conditions used 5,000 Wright-Fisher replicates and retaine
 
 ## Primary adequacy result
 
-All **36/36 cells** remained within the predeclared factor-two adequacy tolerance
+All **36/36 cells** remained within the factor-two adequacy tolerance fixed in the computational specification before primary execution
 
 |E_log| <= log10(2) = 0.30103.
 
@@ -24,7 +24,7 @@ Signed errors were predominantly negative: **33/36 negative and 3/36 positive**.
 
 ## Individual perturbations
 
-Across the four baselines, route multiplicity, positive epistasis, and elevated second-step mutation generally produced modest changes in signed approximation error. Negative epistasis generated the largest single observed change, especially B3, but that B3 target probability is extremely small and its bootstrap uncertainty is correspondingly broad.
+Across the four baselines, multiple-target perturbation, positive epistasis, and elevated second-step mutation generally produced modest changes in signed approximation discrepancy. Negative epistasis generated the largest single observed change, especially B3, but that B3 target probability is extremely small and its bootstrap uncertainty is correspondingly broad.
 
 No universal monotone direction should be claimed for any single perturbation.
 
@@ -39,15 +39,15 @@ Notable paired-interaction results:
 - B3 route + positive epistasis: I_RE = -0.03501, 95% CI [-0.05251, -0.01799].
 - B3 route + elevated mutation: I_RM = -0.03953, 95% CI [-0.05814, -0.02160].
 
-Other predeclared interaction intervals included zero or were borderline. These are approximation-error interactions, not claims of novel biological epistasis or synergy.
+Other predeclared interaction intervals included zero or were borderline. These are approximation-discrepancy interactions, not claims of novel biological epistasis or synergy.
 
 ## Interpretation
 
 Stage 5 supports a deliberately narrower conclusion than a universal failure-boundary claim.
 
-Within four saturation-aware K=2 baseline regimes and the frozen perturbation magnitudes, the origin-fixation approximation remained factor-two adequate for every tested condition. Biological departures nevertheless moved the signed approximation error, and selected paired perturbations produced reproducible non-additive changes in error.
+Within four saturation-aware K=2 baseline regimes and the frozen perturbation magnitudes, the origin-fixation approximation remained factor-two adequate for every tested condition. Biological departures nevertheless moved the signed approximation discrepancy, and selected paired perturbations produced reproducible non-additive changes in error.
 
-Therefore the useful object is not simply a binary statement that origin-fixation fails. It is the **model- and endpoint-specific approximation error response** and how controlled assumption changes move that response.
+Therefore the useful object is not simply a binary statement that origin-fixation fails. It is the **model- and endpoint-specific approximation discrepancy response** and how controlled assumption changes move that response.
 
 The absence of a factor-two crossing is scientifically informative and is retained as a negative result.
 
@@ -55,8 +55,8 @@ The absence of a factor-two crossing is scientifically informative and is retain
 
 Do not claim:
 - a universal evolutionary adequacy boundary;
-- that route multiplicity, epistasis, or mutation-rate heterogeneity are new mechanisms;
-- that Stage 5 proves these factors generally increase approximation error;
+- that multiple-target perturbation, epistasis, or mutation-rate heterogeneity are new mechanisms;
+- that Stage 5 proves these factors generally increase approximation discrepancy;
 - that the significant interaction contrasts are universal biological interactions.
 
 Safe statement:
@@ -68,3 +68,8 @@ Safe statement:
 **Stage 5 is complete. Do not enlarge the simulation grid post hoc.**
 
 Proceed to Stage 6 empirical LTEE stress evidence. Stage 6 should test whether approximation-relevant features represented in the controlled study occur in long-term experimental evolution data; it must not be presented as proving the mathematical approximation framework.
+
+
+## Final manuscript alignment
+
+The final manuscript reports this stage conservatively. The `{10,01}` condition is a **multiple-target perturbation**: relative to the baseline target `{11}`, it changes the target set and mutational depth. The primary runner did not generate the single-route comparator proposed in the frozen protocol, so no clean causal route-multiplicity contrast is claimed. Final interaction reporting uses the signed contrast `I_ij = E_ij - E_i - E_j + E_0`; the unused magnitude contrast proposed during protocol development is not part of the manuscript analysis. “Predeclared” means fixed in the computational specification before primary Stage-5 execution, not externally preregistered.
