@@ -6,7 +6,7 @@ This repository contains the software, frozen configurations, tests, machine-rea
 
 The study asks a specific population-genetic question: **when does a sequential origin–fixation approximation reproduce the finite-horizon probability of target fixation in an explicit finite population?** The approximation is compared with a haploid Wright–Fisher reference for the same target event and observation horizon.
 
-The work treats Wright–Fisher dynamics, fixation probabilities, origin–fixation theory, genotype findability, fitness landscapes, epistasis, and evolutionary accessibility as established foundations. Its contribution is an endpoint-specific comparison framework built around matched finite-horizon target probabilities, signed approximation error, explicit tolerance-defined adequacy, exact diagnostics, held-out time-scale validation, and controlled biological stress tests.
+The work treats Wright–Fisher dynamics, fixation probabilities, origin–fixation theory, genotype findability, fitness landscapes, epistasis, and evolutionary accessibility as established foundations. Its contribution is an endpoint-specific comparison framework built around matched finite-horizon target probabilities, signed approximation discrepancy, explicit tolerance-defined adequacy, exact diagnostics, held-out time-scale validation, and controlled biological stress tests.
 
 ## Main quantities
 
@@ -44,10 +44,10 @@ The primary benchmark endpoint is fixation of the declared target by generation 
 ## Evidence chain
 
 1. **Recovery benchmark:** six matched K=2 cells established the initial finite-horizon discrepancy pattern.
-2. **Exact one-locus diagnostic:** all 18 exact cells showed contraction of signed error toward zero as the observation horizon increased. The calculation isolates the finite time consumed by segregation and selective sweep.
-3. **Independent hold-out validation:** across 54 unseen cells, the sweep-time fraction \(\phi=t_{\rm sweep}/T\) strongly tracked absolute log-error (Spearman \(\rho=0.9226\), \(p=3.67\times10^{-23}\)); all 18 matched series contracted monotonically with increasing \(T\).
+2. **Exact one-locus diagnostic:** all 18 exact cells showed contraction of signed discrepancy toward zero as the observation horizon increased. The calculation isolates the finite time consumed by segregation and selective sweep.
+3. **Held-out exact validation:** across 54 held-out exact cells using previously unseen parameter values, the sweep-time fraction \(\phi=t_{\rm sweep}/T\) strongly tracked absolute log-discrepancy (Spearman \(\rho=0.9226\), \(p=3.67\times10^{-23}\)); all 18 matched series contracted monotonically with increasing \(T\).
 4. **Two-locus benchmark:** 32 cells showed that sweep time remains informative but is not sufficient once mutation supply and multistep dynamics enter. Signed discrepancies included both over- and under-estimation; extending the horizon reduced \(|E_{\log}|\) in 15 of 16 matched pairs.
-5. **Predeclared biological stress test:** all 36 cells remained within the factor-two tolerance. The largest \(|E_{\log}|\) was 0.17996. Route multiplicity, epistasis, and mutation-process heterogeneity shifted signed error, and selected paired perturbations produced non-additive approximation-error responses.
+5. **Frozen biological stress test:** all 36 cells remained within the factor-two tolerance. The largest \(|E_{\log}|\) was 0.17996. A multiple-target perturbation, epistasis, and mutation-process heterogeneity shifted signed discrepancy, and selected paired perturbations produced non-additive approximation-error responses.
 6. **Long-term E. coli evidence:** at generation 50,000, mutator and nonmutator LTEE populations showed a 15.13-fold difference in median mutation burden, strong differences in mutation-spectrum entropy, and 14 independently listed Cit+ mutants across two source-declared structural-event classes (8 variant cit duplications and 6 IS3 insertions).
 
 The LTEE analysis is independent empirical evidence that approximation-relevant heterogeneity and alternative routes occur in a real long-term evolutionary system. It is not used as causal proof of the simulated error patterns.
@@ -108,10 +108,17 @@ Citation metadata are also provided in `CITATION.cff`.
 
 ## Scope
 
-This repository does not claim to introduce evolutionary accessibility, genotype findability, Wright–Fisher dynamics, Markov evolutionary dynamics, fixation probability, origin–fixation theory, epistasis, or route multiplicity. The study focuses on the model- and endpoint-specific magnitude and direction of finite-horizon target-probability approximation error.
+This repository does not claim to introduce evolutionary accessibility, genotype findability, Wright–Fisher dynamics, Markov evolutionary dynamics, fixation probability, origin–fixation theory, epistasis, or route multiplicity. The study focuses on the model- and endpoint-specific magnitude and direction of finite-horizon target-probability approximation discrepancy.
 
 ## License
 
 Licensed under the **Apache License 2.0**.
 
 Copyright © 2026 Mohammad Amir Khusru Akhtar
+
+
+## Manuscript alignment
+
+The repository is aligned with the submitted *Theoretical Population Biology* manuscript. In the formal notation, the biological target genotype set is `A`, while the model-specific target-state sets are `A0=A` for the monomorphic origin–fixation chain and `A1={C: there exists a in A with C_a=N}` for the finite-population count process. The Wright–Fisher model is a finite-population **comparison/reference model**, not biological ground truth. The implemented diffusion fixation probability is itself approximate, so `E_log` measures discrepancy of the complete origin–fixation approximation rather than state reduction alone.
+
+Regularizers used in the frozen analyses were `epsilon=2.5e-4` in Stages 1 and 4, `epsilon=1e-12` in exact Stages 2 and 3, and `epsilon=1e-4` in Stage 5. In Stage 5, the `{10,01}` condition is reported as a **multiple-target perturbation** because it changes both the target set and mutational depth; it is not interpreted as a clean causal test of route multiplicity to one genotype. The term *predeclared* refers to the computational specification fixed before primary Stage-5 execution, not to external preregistration.
