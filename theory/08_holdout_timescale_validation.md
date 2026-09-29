@@ -4,7 +4,7 @@
 This protocol is frozen before generation of the hold-out results. The 18 cells in timescale_diagnostic_v1.csv are discovery/mechanism data and are not the validation set.
 
 ## Question
-Can a dimensionless time-scale quantity predict the magnitude of finite-horizon origin–fixation error on unseen population sizes, selection coefficients, horizons, and target probability levels?
+Can a dimensionless time-scale quantity track the magnitude of finite-horizon origin–fixation error on unseen population sizes, selection coefficients, horizons, and target probability levels?
 
 ## Candidate quantities fixed before validation
 For a beneficial one-locus substitution:
@@ -49,3 +49,8 @@ Support requires the predicted correlation signs globally and in a clear majorit
 
 ## External data
 None required.
+
+
+## Outcome note
+
+The final manuscript calls this **held-out exact validation**. The 54 cells use population sizes and selection coefficients absent from the discovery diagnostic, but they are not described as an externally independent dataset. `phi` strongly tracks absolute log-discrepancy (`rho=0.9226`, `p=3.67e-23`); all 18 matched horizon series contract monotonically.
