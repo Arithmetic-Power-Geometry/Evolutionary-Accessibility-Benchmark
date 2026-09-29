@@ -55,8 +55,13 @@ Thus the supplied LTEE archive independently supports two empirical stress featu
 
 ## Interpretation boundary
 
-These results establish occurrence of approximation-relevant biological heterogeneity in the LTEE. They do **not** establish that this heterogeneity caused the Stage-5 approximation-error patterns, nor that LTEE crosses the factor-two adequacy threshold.
+These results establish occurrence of approximation-relevant biological heterogeneity in the LTEE. They do **not** establish that this heterogeneity caused the Stage-5 approximation-discrepancy patterns, nor that LTEE crosses the factor-two adequacy threshold.
 
 ## Remaining Stage-6 item
 
 E3, route multiplicity, is not inferred from these tables. It requires the dedicated Cit+ route source. Acquire and inventory Dryad DOI 10.5061/dryad.8q6n4 before E3. No additional endpoint will be mined from 6226d merely to strengthen the result.
+
+
+## Final manuscript alignment
+
+The manuscript reports the population-level endpoint exactly as above: median mutation burden 1210.5 versus 80.0 (15.13-fold; exact two-sided Mann–Whitney `U=36`, `p=0.0021645`) and median Shannon entropy 0.513582 versus 1.236223 (`U=0`, `p=0.0021645`). These are descriptive LTEE stress observations, not causal validation of Stage 5.
