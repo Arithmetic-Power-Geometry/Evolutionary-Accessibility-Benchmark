@@ -5,7 +5,7 @@ Workflow run 36389065932 completed successfully on commit 14156a05b3d64f4ea8c524
 
 ## Main results
 
-The K=2 experiment does not support a one-variable account in which sweep-time fraction alone determines finite-horizon approximation error.
+The K=2 experiment does not support a one-variable account in which sweep-time fraction alone determines finite-horizon approximation discrepancy.
 
 Across all 32 cells, Spearman correlation between phi=t_sweep/T and |E_log| was rho=0.5761 (p=5.60e-4). Thus larger sweep-time fraction is associated with larger discrepancy, consistent with the K=1 time-scale diagnostic, but the association is not sufficient to describe all K=2 behavior.
 
@@ -29,7 +29,7 @@ Cell 32 stores raw p0=1.0000000000000002 from matrix-exponential floating-point 
 
 ## Interpretation
 
-The K=1 result generalizes partially: hidden sweep/segregation time remains an important organizer of finite-horizon approximation error. But K=2 introduces additional structure. In particular, mutation supply and multi-step lineage dynamics cannot be summarized safely by phi alone, and saturation can hide discrepancies.
+The K=1 result generalizes partially: finite segregation/sweep time omitted by instantaneous substitution remains an important organizer of finite-horizon approximation discrepancy. But K=2 introduces additional structure. In particular, mutation supply and multi-step lineage dynamics cannot be summarized safely by phi alone, and saturation can hide discrepancies.
 
 This is exactly the motivation for the next controlled stage: perturb biological assumptions while matching or stratifying baseline target probabilities so that boundary movement is not confounded by trivial P≈0 or P≈1 saturation.
 
@@ -47,3 +47,8 @@ Proceed to a predeclared Stage-5 factorial stress test. The design should:
 7. quantify boundary displacement rather than merely asking whether each biological feature affects evolution.
 
 No external empirical dataset is required for Stage 5. LTEE data should enter only after this controlled stress test is frozen and completed.
+
+
+## Final manuscript alignment
+
+Stage 4 is reported as a 32-cell two-locus adequacy benchmark. Both discrepancy signs occur (20 negative, 11 positive, one numerically zero), `phi` remains informative but insufficient, and horizon extension reduces `|E_log|` in 15/16 matched pairs. The pooled `N*mu` association is not interpreted causally because probability saturation compresses discrepancy. Sign counts use full-precision stored values; displayed values may be rounded.
