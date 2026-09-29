@@ -1,7 +1,7 @@
 # Time-scale separation diagnostic — predeclared protocol
 
 ## Question
-Does the finite-horizon discrepancy between a sequential origin–fixation approximation and a Wright–Fisher reference contract as the observation horizon becomes long relative to the hidden segregation/sweep time?
+Does the finite-horizon discrepancy between a sequential origin–fixation approximation and a Wright–Fisher reference contract as the observation horizon becomes long relative to the finite segregation/sweep time omitted by instantaneous substitution?
 
 ## Why one locus
 The diagnostic uses K=1 to remove route multiplicity, epistasis, multi-step waiting-time interactions, and Monte Carlo noise. This is a mechanism-isolation experiment, not the final biological benchmark.
@@ -30,3 +30,8 @@ These are predictions, not guaranteed outcomes.
 The diagnostic is considered mechanistically supportive if the exact-reference discrepancy contracts consistently with increasing T across population sizes. Failure or non-monotonicity is retained and triggers alternative diagnosis.
 
 No adequacy threshold is fitted from these data. No external dataset is required.
+
+
+## Outcome note
+
+The completed exact diagnostic supported all three directional predictions: all 18 cells contracted toward agreement as `T` increased. The final manuscript treats this as an exact finite-time mechanism diagnostic, not a universal scaling law.
