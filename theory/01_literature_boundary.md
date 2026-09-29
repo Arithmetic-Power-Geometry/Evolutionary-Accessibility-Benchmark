@@ -27,9 +27,14 @@ The project asks a model-comparison question:
 
 > Under what conditions does a specified simplified evolutionary probability model reproduce finite-population target-hitting probabilities within a prespecified tolerance, where does that approximation cease to be adequate, and which departures from its assumptions control the magnitude and direction of error?
 
-The intended contribution is the systematic characterization of model-relative approximation error, tolerance-dependent adequacy regions and boundaries, recovery regimes, and the displacement of those boundaries under controlled assumption perturbations.
+The intended contribution is the systematic characterization of model-relative approximation discrepancy, tolerance-dependent adequacy regions and boundaries, recovery regimes, and the displacement of those boundaries under controlled assumption perturbations.
 
 ## Claim discipline
 No file or manuscript generated from this repository should claim that this project invented evolutionary accessibility, genotype findability, hitting times, Markov evolutionary dynamics, Wright–Fisher dynamics, fixation probability, fitness landscapes, epistasis, or origin–fixation theory.
 
 Novelty claims remain provisional until the expanded literature audit and computational results support them.
+
+
+## Final manuscript contribution boundary
+
+The final manuscript does not claim a first approximation analysis, first validity region, first Wright–Fisher/origin–fixation comparison, or a new evolutionary regime. Its contribution is the matched **finite-horizon target-event probability** comparison, signed log-ratio discrepancy, endpoint/tolerance-specific adequacy set, exact mechanism diagnostic, held-out time-scale validation, and frozen perturbation/interaction analysis. McCandlish (2013) and McCandlish & Stoltzfus (2014) are treated as mandatory foundations.
