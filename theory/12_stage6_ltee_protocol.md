@@ -61,3 +61,12 @@ Stage 6 must not be used to claim:
 ## Stop rule
 
 After E1, E2, and E3 (if supported by the dedicated route dataset), Stage 6 ends. No additional empirical endpoint will be mined merely because it gives a stronger contrast. After Stage 6 the project proceeds to manuscript construction unless a reproducibility defect is discovered.
+
+
+---
+
+## Post-execution record for manuscript alignment
+
+Stage 6 was completed without adding further empirical endpoints. At generation 50,000, population-level mutation burden differed between six point-mutator and six nonmutator LTEE populations (medians 1210.5 vs 80.0; 15.13-fold; exact two-sided Mann–Whitney `U=36`, `p=0.0021645`). Mutation-spectrum Shannon entropy also differed (medians 0.513582 vs 1.236223; `U=0`, `p=0.0021645`). The dedicated Dryad `10.5061/dryad.8q6n4` source listed 14 independent Cit+ mutants across two structural-event classes: 8 variant `cit` duplications and 6 IS3 insertions.
+
+The final manuscript uses these results only as independent empirical evidence that mutation-state heterogeneity, mutation-spectrum differences, and alternative structural routes occur in a real long-term evolutionary system. They are not presented as causal validation of the Stage-5 discrepancy responses.
