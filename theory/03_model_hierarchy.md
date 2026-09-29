@@ -9,7 +9,7 @@ The primary biologically recognized approximation is a sequential-fixation model
 This model is established theory. The contribution is not its construction.
 
 ## M1: finite-population reference process
-The initial reference process is a haploid Wright–Fisher model with explicit finite-population sampling. Extensions may introduce multiple segregating lineages, mutation heterogeneity, epistasis, back mutation, recombination where appropriate, or changing population size.
+The initial reference process is a haploid Wright–Fisher model with explicit finite-population sampling. The benchmark retains explicit genotype counts with finite-population selection, mutation, and multinomial sampling. The final stress extension adds epistasis, state-dependent mutation, and an alternative target set while retaining constant population size, forward mutation, and no recombination.
 
 Wright–Fisher theory is established and is used here as a reference process.
 
@@ -32,3 +32,8 @@ Any unavoidable mismatch must be documented as part of the approximation itself.
 4. Study combinations only after single-factor behavior is characterized.
 5. Estimate adequacy/failure regions without selecting only large-error cases.
 6. Test robustness to target definitions, tolerances, seeds, replicate counts, and numerical regularization.
+
+
+## Final manuscript hierarchy
+
+The submitted study uses `M0-O` as the primary approximation, `M1` as the finite-population Wright–Fisher comparison, an exact `K=1` mutant-count Wright–Fisher chain for mechanism tests, and a `K=2` stress extension. `M1` is a comparison model, not biological ground truth. The implemented `p_fix` is itself a diffusion approximation, so the reported discrepancy evaluates the complete origin–fixation approximation.
