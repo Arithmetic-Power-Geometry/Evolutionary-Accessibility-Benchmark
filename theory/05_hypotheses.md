@@ -8,20 +8,20 @@ As the finite-population reference process approaches the assumptions of the sel
 Falsification signal: persistent, reproducible discrepancy after implementation error, finite-horizon mismatch, and numerical uncertainty are excluded.
 
 ## H2 — Departure from mutation-limited conditions
-Leaving the mutation-limited regime can change approximation error.
+Leaving the mutation-limited regime can change approximation discrepancy.
 
 No universal sign is assumed.
 
 ## H3 — Route multiplicity
-Changing the number or structure of routes to a common target set can change approximation error relative to a model that does not represent the same route structure.
+Changing the number or structure of routes to a common target set can change approximation discrepancy relative to a model that does not represent the same route structure.
 
-No claim is made that additional routes universally increase signed error.
+No claim is made that additional routes universally increase signed discrepancy.
 
 ## H4 — Mutation-process heterogeneity
 State- or time-dependent mutation processes can shift the location of an adequacy boundary relative to an otherwise matched stationary approximation.
 
 ## H5 — Epistasis
-Epistatic landscape structure can alter both magnitude and sign of approximation error. No monotone relationship is assumed a priori.
+Epistatic landscape structure can alter both magnitude and sign of approximation discrepancy. No monotone relationship is assumed a priori.
 
 ## H6 — Interactions
 Joint assumption departures need not equal the sum of their separate effects. Amplifying, approximately additive, and compensating regimes are all admissible outcomes.
@@ -41,3 +41,8 @@ The benchmark must contain:
 
 ## Reporting rule
 All evaluated parameter cells are retained in machine-readable output. Results are not filtered to retain only large discrepancies or hypothesis-supporting cases.
+
+
+## Outcome alignment
+
+The completed study retained both supportive and null outcomes. Exact one-locus and held-out analyses support the finite-time sweep diagnostic; the two-locus benchmark permits both discrepancy signs; and all 36 frozen Stage-5 conditions remain within the factor-two tolerance. These outcomes narrow the final claim from a general failure-boundary narrative to event-, horizon-, tolerance-, and domain-specific approximation adequacy.
