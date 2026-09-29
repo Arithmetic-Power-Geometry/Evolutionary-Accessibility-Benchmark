@@ -3,7 +3,7 @@
 Status: literature boundary frozen before Stage 5. This is a claim-discipline document, not a claim of exhaustive priority.
 
 ## Question audited
-Has prior evolutionary theory already established the proposed object: a signed error surface between a specified simplified evolutionary probability model and a finite-population reference target-hitting/fixation probability, together with tolerance-dependent adequacy regions/boundaries and perturbation/interactions analysis?
+Has prior evolutionary theory already established the proposed object: a signed discrepancy surface between a specified simplified evolutionary probability model and a finite-population reference target-hitting/fixation probability, together with tolerance-dependent adequacy regions/boundaries and perturbation/interactions analysis?
 
 ## Established prior work — not novel
 
@@ -20,7 +20,7 @@ Origin–fixation is an established theory of mutation-limited evolution. The re
 ### Waiting time versus fixation/sweep time
 Prior work explicitly separates waiting time for successful mutation from fixation time and identifies mutation-limited versus fixation-time-limited regimes. Kopp & Hermisson's moving-optimum work and valley-crossing work make this timescale distinction explicit.
 **Claim prohibited:** presenting waiting-time/sweep-time separation itself as new.
-**Our permitted use:** use the ratio as a predeclared explanatory variable for a different response variable: finite-horizon target-probability approximation error.
+**Our permitted use:** use the ratio as a predeclared explanatory variable for a different response variable: finite-horizon target-probability approximation discrepancy.
 
 ### SSWM breakdown, clonal interference and mutation supply
 A large literature shows that successive-fixation assumptions break when mutations arise before prior sweeps complete; N*mu and related quantities organize periodic-selection versus interference regimes.
@@ -59,7 +59,7 @@ This combination is the current candidate methodological contribution. It remain
 
 ## Strongest safe contribution statement
 
-> We develop and benchmark a model-adequacy framework for finite-horizon evolutionary target probabilities. Rather than treating accessibility, origin–fixation dynamics, or SSWM breakdown as new, the framework makes approximation error itself the object of analysis: it measures its magnitude and direction, identifies tolerance-dependent adequacy regions relative to an explicit finite-population reference process, and tests how departures from approximation assumptions move those regions.
+> We develop and benchmark a model-adequacy framework for finite-horizon evolutionary target probabilities. Rather than treating accessibility, origin–fixation dynamics, or SSWM breakdown as new, the framework makes approximation discrepancy itself the object of analysis: it measures its magnitude and direction, identifies tolerance-dependent adequacy regions relative to an explicit finite-population reference process, and tests how departures from approximation assumptions move those regions.
 
 ## Claims we should never make
 
@@ -73,7 +73,7 @@ This combination is the current candidate methodological contribution. It remain
 
 ## Novelty threats to keep testing
 
-A future search could still find a paper that explicitly maps probability-level approximation error between origin–fixation and Wright–Fisher processes. Before manuscript submission, search combinations of: model adequacy, approximation error, origin-fixation, Wright-Fisher, finite-horizon fixation/hitting probability, SSWM validity boundary, first-passage probability, and error surface.
+A future search could still find a paper that explicitly maps probability-level approximation discrepancy between origin–fixation and Wright–Fisher processes. Before manuscript submission, search combinations of: model adequacy, approximation discrepancy, origin-fixation, Wright-Fisher, finite-horizon fixation/hitting probability, SSWM validity boundary, first-passage probability, and error surface.
 
 If exact precedent is found, novelty must move to boundary displacement/decomposition or another demonstrably distinct result rather than ignoring the precedent.
 
@@ -138,7 +138,7 @@ Other population-genetic theory also derives ranges/conditions of validity for a
 ### Consequence
 
 **Claims now prohibited:**
-- first to quantify approximation error in population genetics;
+- first to quantify approximation discrepancy in population genetics;
 - first to map approximation accuracy over parameter space;
 - first to use an error/distance heatmap against Wright–Fisher dynamics;
 - first to identify a parameter-space validity/range-of-validity region;
@@ -174,3 +174,8 @@ Avoid:
 ### Falsification of novelty
 
 If prior work is found that jointly treats a matched finite-horizon evolutionary target-event probability, signed approximation discrepancy, an explicit tolerance-defined adequacy set, and controlled displacement/interactions of that set under biological assumption violations, the current methodological novelty claim must be narrowed again.
+
+
+## Final post-result novelty position
+
+The completed study does **not** claim to resolve a universal adequacy boundary. Stage 5 produced no factor-two crossing in the frozen 36-cell domain. The final contribution is therefore framed more conservatively: finite-horizon target-event probabilities are matched between an origin–fixation approximation and an explicit finite-population comparison; signed discrepancy preserves direction; exact and held-out calculations diagnose the finite-time sweep contribution; two-locus and biological stress tests show where the simple diagnostic becomes incomplete; and LTEE data independently establish biological occurrence of relevant heterogeneity and alternative structural routes. This framing is consistent with the final *Theoretical Population Biology* manuscript and avoids priority claims already threatened by McCandlish (2013), McCandlish & Stoltzfus (2014), Baxter et al. (2021), and the Wright–Fisher approximation literature.
