@@ -39,3 +39,8 @@ The next experiment must:
 6. avoid fitting a threshold until the diagnostic data are generated.
 
 No external empirical dataset is required for this diagnostic.
+
+
+## Final manuscript alignment
+
+This six-cell experiment is retained as the Stage-1 recovery benchmark, not as proof of universal recovery. Five of six full-precision `E_log` values are negative. The result motivated the exact one-locus mechanism test of finite segregation/sweep time omitted by instantaneous substitution.
