@@ -11,9 +11,9 @@ For theta in the evaluated parameter domain, estimate:
 - E_abs(theta)
 - uncertainty for simulation-derived quantities
 
-The principal object is the error surface E_log(theta), not a single maximum discrepancy.
+The principal object is the discrepancy surface E_log(theta), not a single maximum discrepancy.
 
-## Adequacy boundary
+## Adequacy set and sampled boundary
 For tolerance tau, estimate the interface between |E_log| <= tau and |E_log| > tau. Boundary estimates must include numerical/Monte Carlo uncertainty and must not imply precision beyond the sampled grid or interpolation method.
 
 ## Assumption perturbation
@@ -36,4 +36,9 @@ If adequacy boundaries are well resolved, quantify how a perturbation changes th
 ## Scaling search
 Candidate control variables include mutation-supply and scaled-selection quantities such as N*mu, N*s, and horizon-scaled mutation opportunity. These are hypotheses to test, not assumed universal scaling laws.
 
-A successful collapse of multiple raw parameter combinations onto a lower-dimensional error surface would be treated as an empirical/theoretical result only after out-of-sample or held-out validation.
+A successful collapse of multiple raw parameter combinations onto a lower-dimensional discrepancy surface would be treated as an empirical/theoretical result only after out-of-sample or held-out validation.
+
+
+## Final manuscript implementation
+
+For Stage 5, write `E=E_log`. Single-factor contrasts are `Delta_i=E_i-E_0`; for a paired perturbation `Delta_ij=E_ij-E_0`, and the signed interaction is `I_ij=E_ij-E_i-E_j+E_0`. The final manuscript reports these signed contrasts and does not use the earlier proposed magnitude-interaction statistic. No factor-two boundary was crossed in the frozen Stage-5 domain, so the paper reports bounded-domain adequacy and discrepancy responses rather than claiming a resolved universal boundary.
