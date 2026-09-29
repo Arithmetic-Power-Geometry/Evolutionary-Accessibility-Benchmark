@@ -1,7 +1,7 @@
 # K=2 adequacy-boundary experiment — predeclared protocol
 
 ## Purpose
-Move from the exact K=1 mechanism result to the smallest genuinely multi-step target problem. The experiment asks whether finite-horizon sweep-time error remains sufficient, or whether mutation supply and overlapping/segregating lineages create additional approximation error.
+Move from the exact K=1 mechanism result to the smallest genuinely multi-step target problem. The experiment asks whether finite-horizon sweep-time error remains sufficient, or whether mutation supply and overlapping/segregating lineages create additional approximation discrepancy.
 
 ## Models
 M0-O: sequential origin-fixation CTMC.
@@ -40,3 +40,8 @@ All 32 cells are retained. No adequacy threshold is selected after viewing the d
 
 ## External data
 None required.
+
+
+## Outcome note
+
+The completed 32-cell benchmark found both discrepancy signs (20 negative, 11 positive, one numerically zero), `Spearman(phi,|E_log|)=0.5761` (`p=5.60e-4`), and 15/16 matched horizon extensions reduced `|E_log|`. The pooled `N*mu` association is not interpreted causally because high-supply cells often saturate near probability one.
