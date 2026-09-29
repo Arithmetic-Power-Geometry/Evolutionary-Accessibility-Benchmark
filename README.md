@@ -115,10 +115,3 @@ This repository does not claim to introduce evolutionary accessibility, genotype
 Licensed under the **Apache License 2.0**.
 
 Copyright © 2026 Mohammad Amir Khusru Akhtar
-
-
-## Manuscript alignment
-
-The repository is aligned with the submitted *Theoretical Population Biology* manuscript. In the formal notation, the biological target genotype set is `A`, while the model-specific target-state sets are `A0=A` for the monomorphic origin–fixation chain and `A1={C: there exists a in A with C_a=N}` for the finite-population count process. The Wright–Fisher model is a finite-population **comparison/reference model**, not biological ground truth. The implemented diffusion fixation probability is itself approximate, so `E_log` measures discrepancy of the complete origin–fixation approximation rather than state reduction alone.
-
-Regularizers used in the frozen analyses were `epsilon=2.5e-4` in Stages 1 and 4, `epsilon=1e-12` in exact Stages 2 and 3, and `epsilon=1e-4` in Stage 5. In Stage 5, the `{10,01}` condition is reported as a **multiple-target perturbation** because it changes both the target set and mutational depth; it is not interpreted as a clean causal test of route multiplicity to one genotype. The term *predeclared* refers to the computational specification fixed before primary Stage-5 execution, not to external preregistration.
