@@ -41,8 +41,13 @@ Together with E1/E2 from Dryad 10.5061/dryad.6226d, the empirical stage now esta
 2. strong mutation-spectrum concentration differences between mutator and nonmutator populations;
 3. repeated Cit+ realization through at least two structural mutational route classes.
 
-These observations motivate the biological relevance of the controlled stressors without being used as causal validation of the approximation-error framework.
+These observations motivate the biological relevance of the controlled stressors without being used as causal validation of the approximation-discrepancy framework.
 
 ## Decision
 
 **Stage 6 is complete.** Per the frozen stop rule, no additional empirical endpoint will be mined merely to strengthen the paper. Proceed to manuscript construction and reproducibility packaging.
+
+
+## Final manuscript alignment
+
+The final paper describes these as **multiple structural routes to citrate use** and preserves the source-declared counts (8 variant `cit` duplications; 6 IS3 insertions; 14 independently listed Cit+ mutants). This empirical result is not equated with the Stage-5 `{10,01}` target-set perturbation.
