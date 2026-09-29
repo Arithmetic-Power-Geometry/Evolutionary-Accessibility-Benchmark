@@ -199,3 +199,14 @@ Only implementation defects or predeclared adaptive replication may alter comput
 No external dataset is used in Stage 5.
 
 LTEE data enter only in Stage 6, after Stage 5 code, configuration, and results are frozen.
+
+
+---
+
+## Post-execution record for manuscript alignment
+
+This protocol is preserved as the **pre-execution specification** and is not rewritten retrospectively to make it appear identical to the executed analysis. The primary Stage-5 runner executed 36 cells (9 conditions across each of B1–B4) with 5,000 Wright–Fisher replicates per condition. The proposed single-route comparator in Section 6 was **not generated as a separate primary condition**. Consequently, the final manuscript does not report `Delta_R` as a clean route-multiplicity contrast. Instead, the `{10,01}` condition is described as a **multiple-target perturbation** relative to baseline `{11}` because it changes the declared target set and mutational depth.
+
+The final manuscript uses `Delta_i=E_i-E_0`, `Delta_ij=E_ij-E_0`, and `I_ij=E_ij-E_i-E_j+E_0`. The proposed magnitude interaction `J_ij` was not used in the final analysis. “Predeclared” in the paper means that the Stage-5 grid, contrasts, replicate count, deterministic seeds, and bootstrap procedure were fixed in the computational specification before primary execution; it does **not** mean external preregistration.
+
+All 36 executed cells remained within the primary factor-two tolerance `|E_log| <= log10(2)=0.30103`; the largest observed `|E_log|` was 0.17996. The grid was not enlarged post hoc. These execution differences and null boundary result are retained transparently.
