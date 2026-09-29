@@ -7,7 +7,7 @@ The diagnostic contains 18 exact-reference cells; there is no Monte Carlo uncert
 ## Main result
 The predeclared prediction is supported across every population size tested.
 
-For fixed N, increasing T while choosing mu so that M0-O remains at P0=0.5 causes the exact Wright-Fisher fixation probability to move monotonically toward 0.5 and the signed log error to move monotonically toward zero.
+For fixed N, increasing T while choosing mu so that M0-O remains at P0=0.5 causes the exact Wright-Fisher fixation probability to move monotonically toward 0.5 and the signed log discrepancy to move monotonically toward zero.
 
 ### N=100
 E_log: -0.1542, -0.0691, -0.0331, -0.01336, -0.00705, -0.00394 as T increases from 500 to 20000.
@@ -35,3 +35,8 @@ Build candidate predictors from quantities specified without fitting E_log:
 Then evaluate candidate collapse on a new hold-out grid varying N, s, T and mu. The current 18 cells may be used for mechanism discovery, but the hold-out grid must be used for validation.
 
 No external dataset is required.
+
+
+## Final manuscript alignment
+
+This is Stage 2 of the final evidence chain. Across all 18 exact cells, discrepancy contracts toward zero as the horizon increases. The result isolates a finite-time mechanism: the reduced chain credits a successful substitution as complete at origin, whereas the explicit finite-population process spends generations segregating before fixation.
